@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Keyple Logging Android Log JVM Lib</title>
+    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
+<link href="styles/style.css" rel="Stylesheet">
+<link href="styles/main.css" rel="Stylesheet">
+<link href="styles/prism.css" rel="Stylesheet">
+<link href="styles/logo-styles.css" rel="Stylesheet">
+<link href="ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="ui-kit/ui-kit.min.js" defer="defer"></script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="index.html" tabindex="1">
+                    Keyple Logging Android Log JVM Lib
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":/main">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":/main"
+                                       data-filter=":/main"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Keyple Logging Android Log JVM Lib
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" id="content" pageIds="Keyple Logging Android Log JVM Lib::////PointingToDeclaration//-419168471">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Keyple</span></span> <span><span>Logging</span></span> <span><span>Android</span></span> <span><span>Log</span></span> <span><span>JVM</span></span> <span><span>Lib</span></span></h1>
+    <div class="platform-hinted UnderCoverText" data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><p class="paragraph"><h2>Overview</h2></p><p>
+    This library provides an Android Log-based implementation of the Keyple logging API.
+    It allows Keyple components to integrate seamlessly with the Android logging system (android.util.Log),
+    enabling applications to leverage Android's native logging infrastructure including Logcat for debugging
+    and monitoring.
+</p><p class="paragraph"><h2>Purpose</h2></p><p>
+    The Keyple Logging Android Log library serves as a bridge between the Keyple logging framework and Android's
+    built-in logging system. By using this implementation, developers can leverage the standard Android logging
+    tools and practices to configure and manage logging across their Keyple-based Android applications,
+    with full compatibility with Logcat, Android Studio's log viewer, and third-party log analysis tools.
+</p><p class="paragraph"><h2>Key Features</h2></p><ul>
+    <li>Native integration with Android's logging system (android.util.Log)</li>
+    <li>Automatic tag generation with 23-character limit compliance</li>
+    <li>Optimized tag compression preserving class identification</li>
+    <li>Full support for Android log levels (VERBOSE, DEBUG, INFO, WARN, ERROR)</li>
+    <li>Seamless Logcat integration for development and debugging</li>
+    <li>Consistent logging behavior across Keyple components on Android</li>
+</ul><p class="paragraph"><h2>Usage</h2></p><p>
+    To use this library, simply include it as a dependency in your Android project. The Keyple logging
+    framework will automatically detect and use this Android implementation. Logs will be visible in
+    Logcat using the standard Android debugging tools.
+</p><p class="paragraph"><h2>Tag Management</h2></p><p>
+    This implementation automatically handles Android's 23-character tag limit by intelligently compressing
+    fully qualified class names. For example, <code>com.mycompany.android.data.repository.UserRepository</code>
+    is transformed to <code>cmadr.UserRepository</code>, preserving both package context and class identification.
+</p><p class="paragraph"><h2>Package Structure</h2></p><p>
+    This library contains a single internal package:
+</p>
+<ul>
+    <li><code>org.eclipse.keyple.logging.android.log.internal</code> - Internal implementation classes for Android Log integration</li>
+</ul><p class="paragraph"><h2>Important Notes</h2></p><p>
+    <strong>Internal API:</strong> The classes in this library are internal implementation details and should
+    not be used directly by client applications. They are subject to change without notice. Applications should
+    interact with the Keyple logging framework through the public API provided by the core Keyple logging module.
+</p>
+<p>
+    <strong>ProGuard/R8:</strong> Ensure that logging-related classes are properly configured in your ProGuard/R8
+    rules to maintain tag generation accuracy in release builds. Add the following rules to your <code>proguard-rules.pro</code> file:
+</p><div class="sample-container"><pre><code class="block lang-bash" theme="idea"># ============================================================================<br># Keyple Logging Android - ProGuard/R8 Configuration<br># ============================================================================<br><br># Service Provider Interface (SPI) - REQUIRED<br>-keep interface org.eclipse.keyple.core.util.logging.spi.LoggerProvider<br>-keep class * implements org.eclipse.keyple.core.util.logging.spi.LoggerProvider {<br>public &lt;init&gt;();<br>}<br><br># Preserve class names for correct tag generation - CRITICAL<br>-keepnames class org.eclipse.keyple.**<br><br># If you use logging in your own classes, preserve their names too<br># -keepnames class com.yourpackage.** {<br># Replace with your actual package name<br># }<br><br># Required attributes<br>-keepattributes *Annotation*<br>-keepattributes Signature<br>-keepattributes InnerClasses<br><br># ============================================================================<br># Important notes:<br># - Do not use -keep instead of -keepnames as it prevents optimization<br># - -keepnames only preserves names, not dead code<br># - Test in release mode to verify tags are readable<br># ============================================================================</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div></div></div>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="557697386%2FPackages%2F-419168471" anchor-label="org.eclipse.keyple.logging.android.log.internal" id="557697386%2FPackages%2F-419168471" data-filterable-set=":/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":/main" data-filterable-set=":/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-keyple -logging -android -log -j-v-m -lib/org.eclipse.keyple.logging.android.log.internal/index.html">org.eclipse.keyple.logging.android.log.internal</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="557697386%2FPackages%2F-419168471"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>Copyright &copy; Eclipse Foundation, Inc. All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

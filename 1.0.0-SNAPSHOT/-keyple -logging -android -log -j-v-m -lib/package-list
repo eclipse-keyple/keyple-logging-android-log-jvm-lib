@@ -1,0 +1,7 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:org.eclipse.keyple.logging.android.log.internal////PointingToDeclaration/-keyple -logging -android -log -j-v-m -lib/org.eclipse.keyple.logging.android.log.internal/index.html
+$dokka.location:org.eclipse.keyple.logging.android.log.internal/AndroidLogLoggerProvider///PointingToDeclaration/-keyple -logging -android -log -j-v-m -lib/org.eclipse.keyple.logging.android.log.internal/-android-log-logger-provider/index.html
+$dokka.location:org.eclipse.keyple.logging.android.log.internal/AndroidLogLoggerProvider/AndroidLogLoggerProvider/#/PointingToDeclaration/-keyple -logging -android -log -j-v-m -lib/org.eclipse.keyple.logging.android.log.internal/-android-log-logger-provider/-android-log-logger-provider.html
+$dokka.location:org.eclipse.keyple.logging.android.log.internal/AndroidLogLoggerProvider/getLogger/#kotlin.String/PointingToDeclaration/-keyple -logging -android -log -j-v-m -lib/org.eclipse.keyple.logging.android.log.internal/-android-log-logger-provider/get-logger.html
+org.eclipse.keyple.logging.android.log.internal
